@@ -1,0 +1,35 @@
+<!-- developer.mozilla.org for input element types full list -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milligram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <!-- types of text fields -->
+        <input type="number">
+        <input type="password">
+        <input type="date">
+        <textarea></textarea>    
+        
+        <!-- input field attributes -->
+        <input type="email" value="mikolskeezy">  <!-- `value` the input is already filled-->
+        <input type="email" placeholder="email" > <!--`placeholder`input field background text -->
+        <input type="email" readonly>             <!-- the input field cannot be filled, only read-->
+        <input type="email" disabled>             <!-- the input field cannot be used or selected and value cannot be sent to the server -->
+        <input type="email" maxlength="8" placeholder="maxlength 8"> 
+        <input type="email" autofocus placeholder="autofocus">            <!-- when the page loads the field is auto in focus--> 
+        <textarea>enter comment</textarea>        <!-- with textarea the value is entered here-->
+        <!--for typing in comments and stuff-->
+    </form>
+</body>
+</html>

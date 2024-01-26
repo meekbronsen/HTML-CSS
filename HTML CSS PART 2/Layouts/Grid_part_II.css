@@ -1,0 +1,28 @@
+/* justify-item and align-item properties default value is 'stretch' */
+/* when setting sizes of rows and columns prefer using fr, this way the column won't go beyond the container */
+
+/* setting gaps between the grids: */
+/* row-gap */
+/* column-gap */
+/* gap shorthand */
+
+.container{
+    height: 95vh;
+    display: grid;
+    border: 3px solid lightgrey;
+    
+    /* justify-items: stretch; */
+    /* align-items: stretch; */
+
+    grid-template: /*grid-template-row*/ 100px auto /* auto will adhere to viewport adjustment */ 100px   /  /*grid-template-column*/  /* using fractions to change the sizes of the grid column*/ 30fr 70fr;
+
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: /*row-gap*/ 10px /* column-gap */ 10px;
+}
+
+.box{
+    /* width: 5rem; */
+    /* height: 5rem; */
+    background: orange;
+}

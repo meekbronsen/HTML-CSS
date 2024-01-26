@@ -1,0 +1,24 @@
+/* the more specific rules out weighs others */
+/* if rules are the same the last rule will apply */
+/* hover over an element to see the selector specifity */
+/* selector specifity: (0,0,1)  (No.of id selectors,   No.of class selector,   No. of element selctor/type)  */
+
+
+/* in h1 below the total selector specifity is 1 so  */
+h1{
+    color: blue !important;  /* the !important keyword is used to avoid this rule from being overwritten, but this is termed bad practice*/
+}
+
+/* in highlight below the total selector specifity is 10 so it has more dominant */
+.highlight{
+    color: red;
+}
+/* this one is 100 */
+#product{
+    color: hotpink;
+}
+
+/* So we could insert dominance manualy by increasing the  selector weight */
+h1.highlight#product{
+    color:blue
+}

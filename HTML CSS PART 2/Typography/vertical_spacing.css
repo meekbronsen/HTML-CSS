@@ -1,0 +1,12 @@
+/* Properties margin and line-height */
+/* Law of proximity, Object that are close to each other termed to be related */
+
+body{
+    font-size: 1rem;
+    /* line-height: 1.5rem; lines become more seperated */
+    line-height: 1.5;    /*without rem, the 1.5 turns into a multiplier so font-size wont affect*/
+}
+
+h1{
+    margin: 2rem 0 1rem; /* law of proximity */
+}

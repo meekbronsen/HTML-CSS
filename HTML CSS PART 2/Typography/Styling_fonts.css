@@ -1,0 +1,24 @@
+/* Main categories of fonts are:  */
+/* serif;   Georgia, Times New Roman */
+/* San-serif; Avenir, Arial, Futura, Helvetica, Roboto */
+/* Monospace; Consolas, Courier, Ubuntu*/
+/* fonts with space between are placed under quote */
+
+body{
+    margin: 10px;
+}
+
+/* VS Code suggest web-safe fonts when CTRL + SPACE */
+
+p{
+    /* Below is a font stack. If the font is missing, the computer will move to the next font */
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* font-size: 1rem; */
+    /* font-weight: bold; bold = 900 */
+    /* font-weight: normal; normal = 400 */
+}

@@ -1,0 +1,33 @@
+/* Having a consistent naming convention */
+    /* If it is team every member should follow a similar naming convention */
+
+/* Dividing you sheets into logical sections */
+    /* for a small project you may have a single style sheet */
+    /* for large projects you want to split the style sheet into multiple */
+    /* If the project has many code, separate them into sections with different containers */
+    /* Typography */
+    /* Forms */
+
+/* Avoid overspecific selectors */
+div.nav > ul.items > li{
+    color:blue;}
+    /* In the code above, the sheet knows  too much about the markup */
+    /* Remove element name because we might change the element from the markup  */
+    /* just use the classes to reduce selector specifity */
+
+/* Avoid the !important keyword */
+    /* Do not use the important keyword */
+
+/* Sort CSS properties (not cumplsory)*/
+.item{
+    background-color: blue;
+    color: red;
+    font-weight: bold;
+}
+
+/* Take advantage of style inheritance */
+    /* just give the parent the style for him to feed to the kids instead of repetition */
+
+/* Extract repetitive patterns */
+
+/* No DRY code */

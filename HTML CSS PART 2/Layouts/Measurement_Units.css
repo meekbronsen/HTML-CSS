@@ -1,0 +1,37 @@
+/* some people argue we should not use px since they are not scaleable */
+/* without a parent element to relate to, the element will relate to viewport units */
+/* Absolute units
+    px
+
+    pt, cm, mm, inches are mostly used when printing the page
+    pt
+    In
+    cm
+    mm
+           
+ */
+ 
+/* Relative Units
+    %                     relative to the size of another element's pixels
+    vw and vh             relative to the size of the viewport
+    em and rem            relative to the font size*/
+
+body{
+    margin: 10px 0px;
+}
+
+.box{
+    /* with percentage, this.element becomes relative to the parent element which is the body*/
+    width: 50%;         
+    height: 100px;
+    background: yellow;
+}
+
+/* Using viewport width and height, which are relative to the viewport  */
+.box{
+    width: 50vw;       /*means 50% of the viewport width */
+    height: 100vh;    /* means 100% of the viewport height */
+    background: lightgreen;
+}
+
+/* em and rem are in relation to the font size, when the font size is adjusted to large or very large the follow */

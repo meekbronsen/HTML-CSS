@@ -1,0 +1,52 @@
+<!-- If you wanna prevent the user from typing in an invalid value use drop downlist -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        optgroup.group{
+            color: rgba(0, 0, 0, .5);
+        }
+        option{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <select>
+            <option value="">Select Course...</option>
+            <option value="1">HTML</option>  <!--The value attribute will be sent to the server when user submits the form-->
+            <option value="2">CSS</option>
+            <option value="3" selected>Javascript</option> <!--with selected att, javascript will be selected automatically -->
+        </select>
+
+        <!-- Selecting multiple options -->
+        <select multiple>
+            <option value="" >Select Course...</option>
+            <option value="1">HTML</option>  
+            <option value="2">CSS</option>
+            <option value="3">Javascript</option> 
+        </select>
+        
+        <!-- What if you have alot of options so you need to categorize them -->
+        <select>
+            <optgroup class="group" label="Front-end courses">
+                <option value="1">HTML</option>  
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option> 
+            </optgroup>
+            <optgroup class="group" label="back-end courses">
+                <option value="1">Node.js</option>  
+                <option value="2">ASP.Net</option>
+                <option value="3">Django</option> 
+            </optgroup>
+        </select>
+    </form>    
+</body>
+</html>

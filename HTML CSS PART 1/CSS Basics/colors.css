@@ -1,0 +1,35 @@
+/* setting color using rgb(red,green,blue) values */
+/* .box{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(230, 205, 16);
+} */
+
+/* setting using rgba(red,green,blue,alpha)  alpha will range from 0 to 1 */
+/* .box{
+    width: 400px;
+    height: 100px;
+    background-color: rgba(230, 205, 16, .5);
+} */
+
+/* Using HEX values HEX#e6cd10 e6= 230; cd = 205; 10 = 16 */ 
+
+.box{
+    width: 400px;
+    height: 100px;
+    background-color: #e6cd16
+}
+
+/* Using the HSL system Hue Saturation lightness */
+.box{
+    width: 400px;
+    height: 100px;
+    background-color: hsl(53, 65%, 77%)
+}
+
+/* Using the HSLA system Hue Saturation lightness */
+.box{
+    width: 400px;
+    height: 100px;
+    background-color: hsl(53, 65%, 77%, 0.5)
+}

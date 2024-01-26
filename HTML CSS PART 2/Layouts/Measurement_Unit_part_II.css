@@ -1,0 +1,8 @@
+/* Medium font size is 16px and is the default */
+/* if the font size is set to very large the box will increase relative to the text */
+
+.box{
+    width: 30rem;
+    height: 100vh;
+    background: pink;
+}

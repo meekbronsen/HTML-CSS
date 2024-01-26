@@ -1,0 +1,67 @@
+<!-- tables. a table has header cells that describe info on the data, and data cells that hold data -->
+<!-- thead and tbody are used to make the table meaningful for search engines and screen readers-->
+<!-- HTML that is meaningful for search engines and screen readers is known as semantic HTML (meaningful HTML) -->
+<!-- by default td is aligned to the left -->
+<!-- by default th is centered and bold -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,td,th {
+            border: 1px solid rgba(63, 62, 62, 0.644);
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        td.losses {
+            color: red;
+        }
+        td.wins {
+            color: green
+        }
+        tfoot {
+            text-align: left;
+        }
+
+    </style>
+  </head>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">BACKTEST</th> <!--the colum span attribute-->
+            </tr>
+            <tr>
+                <th>Trades</th>
+                <th>number of trades</th>
+                <th>amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>wins</td>
+            <td>10</td>
+            <td class="wins">1000</td>
+          </tr>
+          <tr>
+            <td>loss</td>
+            <td>20</td>
+            <td class="losses">200</td>
+          </tr>
+          <!-- footer -->
+          <tfoot>
+            <tr>
+                <th>TOTAL</th>
+                <th>30</th>
+                <th>800</th>
+            </tr>
+          </tfoot>
+        </tbody>
+      <!-- tr stands for table row-->
+      <!-- td table data -->
+    </table>
+  </body>
+</html>

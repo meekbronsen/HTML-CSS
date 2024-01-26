@@ -1,0 +1,59 @@
+/* text-align */
+/* text-indent */
+/* text-transformation */
+/* text-decoration */
+/* white-space */
+/* column create multicolumn text */
+/* direction */
+
+body{
+    margin: 10px;
+}
+
+/* text-align self explanatory*/ 
+.first{
+    width: 50ch;
+    text-align: left;            /*default*/
+    text-align: center;
+    text-align: justify;         /*justify not recommended because it makes text hard to read because of spaces*/
+    text-align: right;
+}
+
+/* text-indent adds space on the first line, like a  new paragraph in composition writing*/
+.second{
+    text-indent: 20px;
+}
+
+/* text-decoration */
+.third{
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+
+/* text-transform */
+.fourth{
+    text-transform: lowercase ;
+    text-transform: uppercase ;
+    text-transform: capitalize; /*capitalize the first letter of every word*/
+}
+
+/* white-space */
+.fifth{
+    white-space: nowrap; /* no line break for that line of text*/
+}
+
+/* truncate text */
+.sixth{
+    width: 50ch;
+    white-space: nowrap;
+    border: 2px solid orange;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* multiple columns */
+.seventh{
+    column-count: 2; /* adding text into columns */
+    column-gap: 2rem;  
+    column-rule: 2px solid #ff2;  /* adding a ruler between the columns*/
+}

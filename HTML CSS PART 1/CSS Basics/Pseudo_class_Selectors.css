@@ -1,0 +1,46 @@
+/* using a Pseudo class Selector to make changes*/
+
+article :first-of-type{
+    color: red;
+    font-style: italic;
+}
+
+/* every first child */
+article :first-child{
+    color: red;
+    font-style: italic;
+}
+article p:nth-of-type(even)
+
+/* the first p */
+article p:first-of-type{
+    color: blue;
+}
+
+article p:last-child{
+    font-style: italic;
+}
+
+/* the odd item in the list*/
+ul li:nth-child(odd){
+    color: yellow;
+}
+/* the even item in the list*/
+ul li:nth-child(even){
+    color: red;
+}
+ul li:nth-child(3n){ /* the third item on the list*/
+    color: hotpink;
+}
+a:visited{
+    color: orangered
+}
+
+/* Pseudo class applying to all links */
+a:visited, a:link{
+    color: green;
+}
+/* when user hovers over the link , we should use focus if the user the tab key */
+a:hover, a:focus{
+    color:red;
+}

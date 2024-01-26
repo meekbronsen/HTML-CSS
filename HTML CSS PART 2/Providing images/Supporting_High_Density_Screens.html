@@ -1,0 +1,34 @@
+<!-- A phone with a scale factor of 2x means it's going to render each pixel of the image using 2px on the device -->
+
+<!-- device have physical resolution and logical resolution -->
+
+<!-- physical resolution. fixed pixels of the device -->
+<!-- logical resolution. how the device behaves, e.g the device always scales the resolution of the image to fit the screen-->
+<!-- css is based on the logical resolution -->
+<!-- Device Pixel Ratio (DPR). the ratio of physical/logical, the scaling ratio -->
+<!-- devices have a dpr of 1.5, 2, 2.5, 3 -->
+<!-- but we should only worry about 2 and 3 -->
+<!-- A high density screen is a screen with a dpr greater than one -->
+<!-- providing images for different screens with different dpr use the srcset  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Supporting_High_Denisty_Screens.css" />
+  </head>
+  <body>
+    <img src="images/meal.jpg" alt="a bowl of fish" class="meal" />
+    <img
+      src="images/meal.jpg"
+      alt="a bowl of fish"
+      class="meal"
+      srcset="images/meal.jpg 1x,
+              images/meal@2x.jpg 2x, 
+              images/meal@3x.jpg 3x"
+    />
+  </body>
+</html>

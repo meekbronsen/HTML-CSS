@@ -1,0 +1,27 @@
+/* Parent elements do not recognize floated elements */
+/* So how do we fix that */
+/* A hack is a dirty solution */
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  float: left;
+}
+/* the Parent element */
+.tweet {
+  border: 5px solid lightgrey;
+}
+
+/* the element will clear from the float */
+.clear {
+  /* clear: left; */
+  /* clear: right; */
+  clear: both;
+}
+
+/* We use a pseudo element selector*/
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}

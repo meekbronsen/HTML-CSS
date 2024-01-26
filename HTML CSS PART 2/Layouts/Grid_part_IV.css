@@ -1,0 +1,34 @@
+/* Location by name */
+/* naming the grids and placing items inside them */
+/* grid-template-area */
+/* grid-area */
+
+.container {
+  height: 95vh;
+  display: grid;
+  border: 3px solid lightgrey;
+
+  grid-template: /*vertical*/ repeat(3, auto) / /*horizontal*/ 30fr 70fr;
+
+  gap: 5px;
+
+  grid-template-areas: /* the names of the first two cells*/ 
+    "header header" 
+    "sideBar main"
+    "footer footer";
+    /* To specify an empty cell use a period */
+}
+
+.box {
+  background: orange;
+}
+.box-body{
+  grid-area: sideBar;
+}
+.box-header {
+    grid-area: header ;
+}
+.box-footer{
+    grid-area: footer;
+}
+

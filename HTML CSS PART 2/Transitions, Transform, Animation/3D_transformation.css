@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    text-align: center;
+    transition: transform 1s;
+
+}
+.box:hover{
+    /* transform: perspective(200px) translateZ(-10px); /* Positive value box moves closer to viewer */
+    /* transform: perspective(200px) rotateY(30deg); /* rotation too */
+    /* transform-origin: x-offset /*0 /* y-offset */ /*50%; /* property to move orgin of the box */
+    transform-origin: 0 50%; /* property to move orgin of the box
+    transform: perspective(100px) translateZ(1px);
+}
+
+/* There is a shorthand for perspective, you can apply it to the parent element inorder for the children to share the same origin */

@@ -1,0 +1,28 @@
+/* OOC principles */
+
+/* 1. Separate container from content */
+/* .hero .btn{
+    background-color: orange;
+    border: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "Open Sans";
+} */
+/* From the above code, remove .hero so that btn can be assigned to any element not just one */
+
+/* 2. Seperate structure from skin */
+.btn{
+    border: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "Open Sans";
+}
+/* The properties above define the structure */
+
+/* Skin the varying property for each modifier */
+.btn-primary{
+    background-color: orange;
+}
+.btn-secondary{
+    background-color: violet;
+}

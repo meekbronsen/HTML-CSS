@@ -1,0 +1,25 @@
+.bg-rocketship {
+    width: 100px; height: 100px;
+    background: url('images/css_sprites.png') -10px -10px; /* the -10px 10px are for positioning the elements*/
+    background-position: -10px -10px; /* you could use the short hand to display */
+    display: inline-block
+}
+
+
+.bg-landing {
+    width: 100px; height: 100px;
+    background: url('images/css_sprites.png') -130px -10px;
+    display: inline-block
+}
+
+.bg-dishes {
+    width: 100px; height: 100px;
+    background: url('images/css_sprites.png') -250px -10px;
+    display: inline-block
+}
+
+.bg-saturn {
+    width: 100px; height: 100px;
+    background: url('images/css_sprites.png') -370px -10px;
+    display: inline-block
+}

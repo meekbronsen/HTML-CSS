@@ -1,0 +1,21 @@
+/* working with gradient colors in div container */
+/* Online tools that help create gradients and generate the CSS code */
+/* cssgradient.io */
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right , black, yellow) ;
+    background: linear-gradient(to bottom right , black, yellow) ;
+
+    /* Using degress to specify ratation*/
+    background: linear-gradient(135deg, black, yellow,) ;
+    background: linear-gradient(135deg, black 50%, yellow 50% ) ; /* Using the percent to map color dominance */
+    background: linear-gradient(135deg, black, yellow, pink) ;
+}
+
+.box2{
+    width: 700px;
+    height: 150px;
+    background: radial-gradient(circle at top left, pink,lightblue)
+}

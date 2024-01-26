@@ -1,0 +1,35 @@
+/* In Media queries we want the layout of our web to change depending on the device screen size, mobile or desktop */
+/* Apparently, it is preferrable to develop mobile layout first then adjust it to desktop */
+/* Break point is the point at which our design breaks*/
+/* An ideal line length of characters, should be 50-60 characters */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-box {
+  background-color: yellow;
+  padding: 1rem;
+}
+.second-box {
+  background-color: dodgerblue;
+  padding: 1rem;
+}
+
+/* media query is a logic */
+/* screen is a media type */
+@media screen and (min-width: 500px) { /* if the left condition is true,
+  the styles defined in the curlies will be applied*/ 
+  /* the rules below are set to overwrite the above rules, break point */
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* media type printer */
+@media print {
+  /* remember printers uses; points pt, cm, inches and mm */
+  /* font-size: 10pt;  points for fonts when printing */
+  /* padding: cm    padding and margin use centimeters*/
+}

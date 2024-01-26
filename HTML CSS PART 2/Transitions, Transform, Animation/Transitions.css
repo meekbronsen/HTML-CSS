@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    text-align: center;
+    transition: transform 0.5s; 
+    transition: transform 0.5s linear; /* linear transition */
+    transition: transform 0.5s ease-in; /* starts slowly then quick */
+    transition: transform 0.5s ease-out; /* starts quick and then slows down */
+
+    /* cubic-bezier.com to design your own animation */
+    transition: transform 0.5s cubic-bezier(); /* you can create a custom bezier curve */
+    transition: transform 0.5s linear 0.5s; /* setting a delay time*/
+    transition: transform 0.5s linear 0.5s, background-color 0.5s; /* multiple properties to animate*/
+}
+.box:hover{
+    transform: rotate(30deg);
+    background-color: lightblue;
+}

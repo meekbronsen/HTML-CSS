@@ -1,0 +1,15 @@
+/* This is a descedant selector*/
+section#products p { 
+    color: green;
+}
+
+section#products ~ p{ /* select all the p element coming after section*/
+    color : blue;
+}
+section#products + p{ /* select the p element coming after section*/
+    color : pink;
+}
+
+#products > p{ /* to change only the direct child elements of product section*/
+    color: orangered;
+}

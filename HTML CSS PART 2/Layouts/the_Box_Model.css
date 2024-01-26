@@ -1,0 +1,17 @@
+/* margin collapses padding does not */
+#paragraph1{
+    padding: 10px 20px;
+    border: 5px solid blue;
+}
+
+p{
+    padding:20px;
+    margin: 0px;
+}
+
+/* The margin of the bottom element is collapsed into the top's */
+p{
+    margin:20px;
+    padding: 0px;
+}
+/* Only use padding to add space between the element and the border */

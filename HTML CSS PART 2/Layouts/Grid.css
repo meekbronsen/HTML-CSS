@@ -1,0 +1,29 @@
+/* Used for laying out content in both row and columns */
+/* justify item and align items work the same way as in flex box align*/
+/* justify content and align content moves the whole grid inside the container */
+
+.container{
+    height: 95vh;
+    display: grid;
+    
+    grid-template-rows: 100px 100px 100px ; 
+    grid-template-columns: 100px 100px ;
+
+    grid-template-rows: repeat(3, 100px) ;  /* instead of repeating yourself use the repeat function */
+    grid-template-columns: repeat(2, 100px); 
+
+    grid-template: /*row*/ repeat(3, 100px)  /  /*column*/ repeat(2, 100px);  /* the longhand property for all the above */
+    border: 3px solid lightgrey;
+    
+    justify-items: center; /* Individual items in the grid */
+    align-items: center;
+
+    justify-content: center; /* the whole grid will move*/
+    align-content: center;
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    background: orange;
+}

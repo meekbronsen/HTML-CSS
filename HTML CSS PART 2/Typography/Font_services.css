@@ -1,0 +1,19 @@
+/* (fonts.google.com) will give you acces to free fonts */
+/* (fonts.adobe.com) Adobe Fonts  */
+/* fonts.com */
+/* fontdeck.com */
+
+/* DECIPHERING INFO FROM A FONT URL  */
+/* fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap*/         /* this is called a query string parameters after css2*/
+
+/* Open+Sans   the name of the font and, since we cannot have a space between Open and Sans */
+/* wght@400;700 the font is need in weight of 400(regular) and 700(bold) */
+/* the & is used to seperate multiple parameters in the url */
+/* display, the fout is set to swap, you can change it to optional */
+
+h1{
+    font-family: Lato ,Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif ;
+}

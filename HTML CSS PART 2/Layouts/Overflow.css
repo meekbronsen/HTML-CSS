@@ -1,0 +1,12 @@
+/* Overflow is when content is too much to be contained in the container so it overflows*/
+/* we use the Overflow property to change the behaviour of overflow */
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 5px solid orangered;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    overflow: auto;
+    text-overflow: ellipsis;
+}

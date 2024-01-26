@@ -1,0 +1,19 @@
+/* pseudo elements are used to style part of an element unlike pseudo class used on elements */
+
+p::first-letter {
+    font-weight: bold;
+}
+
+/* fist line of the paragraph */
+p::first-line{
+    color : blue
+}
+
+::selection{ /* selected text */
+    color: red;
+}
+
+p::before{
+    content: '...';
+    display: block; /* block level element */
+}

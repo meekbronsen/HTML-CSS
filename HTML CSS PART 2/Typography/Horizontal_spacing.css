@@ -1,0 +1,9 @@
+body{
+    /* letter-spacing: 1px; */
+    word-spacing: 5px;
+}
+
+/* the ideal line length should have 50-70 char, No more No less */
+p{
+    width: 50ch; /* this is equivalent to the width of 50 0's */
+}

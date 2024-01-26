@@ -1,0 +1,33 @@
+/* FOUT */
+/* If user has slow internet connection, default fonts will show (fallback font) before the custom font is downloaded and displayed */
+/* this can also cause shifting of elements position  */
+/* we can't prevent this but can find work arounds */
+/* NB Cache is storage the browser sets up and uses to store assets behind a website */
+/* another way of reducing fout is customizing the font-pack in expert mode in Web Generator of fontsquirrel*/
+
+@font-face {
+    font-family: 'open_sansregular'; /*font name*/
+    src: url('fonts/Open-Sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/Open-Sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: auto;     /* the problem with this is that different browser handle the cases differently */
+    font-display: fallback; /* the fallback font will be used*/
+    font-display: block;    /* never to be used as the text will remain invisible if resource is never downloaded*/
+    font-display: optional; /* after an amount of time, the font won't be swaped but download will continue and swapped on the next page reload */
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/Open-Sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/Open-Sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p{
+    font-family: 'open_sansregular' ;
+}

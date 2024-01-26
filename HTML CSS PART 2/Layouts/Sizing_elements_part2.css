@@ -1,0 +1,9 @@
+/* Using the Universal selector to select all elements */
+/* div is a block level element */
+
+.box{
+    width:100px;
+    height: 100px;
+    background-color: yellow;
+    display: inline-block;        /*turning the block and inline property*/
+}

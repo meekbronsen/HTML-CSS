@@ -1,0 +1,18 @@
+/* Flexible Box layout */
+/* FlexBox is used for laying out elements in one direction*/
+
+.container {
+  border: 3px solid lightgrey;
+  display: flex; /* enable flex */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  flex-direction: column-reverse;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem ;
+    background: orange;
+}

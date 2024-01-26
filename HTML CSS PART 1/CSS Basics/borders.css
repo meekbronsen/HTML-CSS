@@ -1,0 +1,20 @@
+/* the border propety is called a short hand property */
+ /* border-top-color is along hand property */
+/* the order of the properties matter */
+
+.box{
+    width: 600px;
+    height: 200px;
+    background: aqua;
+    /* border: 1px solid red ; */
+    /* border: 10px dotted red ; */
+    border: 10px dashed red ;
+    border-width: /* top right bottom left*/ 1px 10px 15px 20px;
+    border-style: dotted;
+    border-top-color: black;
+    border-radius: 50px; /* the roundness of the corner*/
+    /* If you have a square .box 100% radius will make the box circle */
+}
+
+/* If you need more shapes like stars triangles use*/
+/* css-tricks.com/the-shapes-of-css/ */

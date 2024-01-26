@@ -1,0 +1,28 @@
+<!--Blocks  e.g the card block is a component that in our webpage,
+            blocks can contain elements or other blocks
+    Elements 
+    Modifiers  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- block naming convention(card). A block that is unique from other blocks but in the same group(card--popular) -->
+    <div class="card card--popular">  <!-- double hyphen to separate block from modifier-->
+
+        <!-- elements of a block naming convention -->
+        <header class="card__header"> <!-- BEM name two underscores to separate block from a element -->
+            <span class="card__price"></span>
+        </header>
+        <div class="card__body">
+
+            <!-- because button is a block on it's own no double-underscore naming convention -->
+            <button class="btn"></button>
+        </div>
+    </div>
+</body>
+</html>

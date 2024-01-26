@@ -1,0 +1,16 @@
+/* Parent elements do not recognize floated elements */
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+/* the element will clear from the float to the bottom */
+.clear{
+    /* clear: left; */
+    /* clear: right; */
+    clear: both;
+}
+

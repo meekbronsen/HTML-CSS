@@ -1,0 +1,25 @@
+/* selecting by Type */
+body{
+    margin: 10px;
+}
+/* selecting by ID*/
+/* #products{
+    
+} */
+
+/* selecting by class */
+/* .products{
+
+} */
+
+/* selecting by Attribute */
+/* not very common but you can select elements sharing similar attribute */
+a[href*=google]{   /* checking to see if href attribute value includes a name google*/ 
+    color: blue
+}
+a[href^=https]{  /* check to see if href attribute value starts with https*/
+    color: red
+}
+a[href$=goggle]{ /* check to see if href attribute value ends with goggle*/
+    color: black
+}

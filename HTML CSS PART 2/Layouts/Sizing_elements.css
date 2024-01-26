@@ -1,0 +1,11 @@
+/* Using the box-sizing element to size the border */
+/* box-sizing does not apply to pseudo element selectors */
+/* the box increases in size as more box-model layers are added */
+.box{
+    width:100px;
+    height: 100px;
+    background-color:yellow;
+    padding: 20px;
+    border: 10px solid orangered;
+    /* box-sizing: border-box; */
+}

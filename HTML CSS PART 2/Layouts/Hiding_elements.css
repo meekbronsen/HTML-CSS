@@ -1,0 +1,4 @@
+.first{
+    display: None;/* eliminate the element from the viewport*/
+    visibility: hidden; /* make the element invisible*/
+}

@@ -1,0 +1,38 @@
+/* Alignment */
+/* during row     - main axis = horizontal, cross axis = vertical */
+/* during column  - main axis = vertical,   cross axis = horizontal */
+/* justify-content  property to align items along the main axis */
+/* align-item property to align item along the cross axis */
+
+.container {
+  border: 3px solid lightgrey;
+  height: 90vh;
+  display: flex; 
+  flex-direction: row;
+  /* justify-content: flex-end; content is moved to the end of the row */
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; the first and last item are pushed to the ends of the container then other items equally distributed */
+  /* justify-content: space-around; */
+
+  /* the cross axis */
+  justify-content: center;
+  
+  /* align-items: flex-end;  box pushed to the end of the vertical/cross axis*/ 
+  align-items: center;
+
+  flex-wrap: wrap; /* with this, the items as many as they are get to keep thier defined sizes by moving excess items to new lines*/
+}
+
+.box {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+  background: orange;
+}
+
+.box-b{
+    /* align-self is applied to flex item and not flex container */
+    /* it is being overwritten by align-content: center; in the container*/
+    align-self: flex-start;
+}

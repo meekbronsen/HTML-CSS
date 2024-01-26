@@ -1,0 +1,28 @@
+/* Flex-basis */
+/* Flex-grow */
+/* Flex-shrink */
+/* Flex */ /* short hand property for all of the above properties*/
+
+/* fLex-grow only works on contained items */
+
+.container{
+    border: 3px solid lightgrey;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    /* flex-basis: ; the item width will increase since flex is set to row */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; an opposite to flex grow */
+    flex: /*grow*/1 /*shrink*/ 1 /*basis*/ 15rem; /* short hand */
+    width: 5rem;
+    height: 5rem;
+    background-color: orange;
+    margin: 0.5rem;
+}
+
+        

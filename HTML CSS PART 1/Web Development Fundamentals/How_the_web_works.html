@@ -1,0 +1,26 @@
+<!-- The client and the server communicate using the HyperTextTransferProtocol or HTTPS  -->
+
+<!-- REQUEST MESSAGE -->
+    GET / index.html HTTP/ 1.1       <!--'GET' to get 'index.html' the file 'HTTP / 1.1' using HTTP version 1.1-->
+    Host: www.codewithmosh.com       <!-- the host-->
+    Accept-Language : en-us          <!--the language that the client can accept   -->
+
+// CLIENT ----> SERVER = HTTP REQUEST
+// CLIENT <---- SERVER = HTTP RESPONSE
+
+<!-- RESPONSE MESSAGE -->
+    HTTP / 1.1 200 OK        <!-- 'HTTP/ 1.1' the http version, '200' STATUS CODE 200 means succesful -->
+    Date : 1 Jan 2021 09:00  <!--  the date and time of the response -->    
+    Content-Type : text/html <!--  the type of content the server is sending back to the client-->
+
+<!-- the file from the server -->
+<!DOCTYPE html>  
+  <html>
+      ...
+      </html>
+
+
+<!--After the file is recived in the client browser, 
+    the browser then creates a DOM while reading the file, 
+    loads the urls inside the file by sending requests to the server in parallel order, 
+    then the page is rendered -->

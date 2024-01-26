@@ -1,0 +1,15 @@
+/*  Filters like: -->
+<!-- grayscale -->
+<!-- contrast -->
+<!-- saturate -->
+<!-- blur -->
+<!-- brightness --> */
+
+/* Using the filter property */
+/* Applying a filter when the image is hovered upon */
+img:hover{
+    filter: blur(3px) grayscale(60%);
+    backdrop-filter: blur(3px) grayscale(10%) brightness(10%);
+}
+
+/* to find the complete list of filters, go to developer.mozilla, or search for filter functions */

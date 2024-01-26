@@ -1,0 +1,23 @@
+/* pixelsizes  are not consistent across devices, e.g (Retina display) so using px units will vary from device to device */
+html {
+  /* 62.6% of 16px*/
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+/* the fonts above are small assuming they are for mobile devices */
+
+/* for tablets and desktops */
+@media screen and (min-width: 400px){
+    html{
+        font-size: 130%;
+    }
+}
+
+/* type-scale.com to pick a font size */

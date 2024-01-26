@@ -1,0 +1,25 @@
+/* functions used for transformations */
+/* Rotate */
+/* Scale */
+/* Skew */
+/* Translate */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    text-align: center;
+}
+.box:hover{
+    transform: rotate(15deg);
+    transform: rotate(-15deg);
+    transform: scale(1.5);
+    transform: skew(5deg); /* like shear force*/
+    transform: translate( /*horizontal*/ 100px , /* vertical */ 100px );  /* moves the box */
+    transform: translateX(100px) rotate(15deg); /* the order of the properties matter */
+}

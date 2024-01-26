@@ -1,0 +1,24 @@
+<!-- Use FormSpree for creating a server of submitted forms -->
+<!-- form action attribute sends requests to given url -->
+<!-- HTTP request methods GET POST PUT DELETE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <form action="https://formspree.io/f/xknaegvd" method="POST">
+        <input type="text" placeholder="username" name="name">
+        <input type="email" placeholder="email" name="email">
+        
+        <!-- 2 Ways to mark submit button -->
+        <input type="submit" value="submit"> 
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

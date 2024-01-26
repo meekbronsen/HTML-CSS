@@ -1,0 +1,49 @@
+/* Precisely positioning elements on the screen */
+/* Relative position the element is moved relative to it's original position*/
+/* Absolute position, the element is removed from the normal flow of the page*/
+
+.container{
+    border: 3px solid grey;
+    /* position: relative; */
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-One{
+    background: red;
+}
+
+.box-Two{
+    background: green;
+    position: relative;
+    /* left: -6rem; */
+    /* left: 4rem; */
+    bottom: 2rem;
+    /* move along the z-axis -1 is away 1 is towards does not take decimals */
+    z-index: -1; 
+}
+
+/* absolute positioning, positioned relative to the parent/container */
+.box-Two{
+    background: green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* with fixed, element is Relative to the viewport. The element will stay at the top even while scrolling down */
+.box-Two{
+    background: green;
+    position: fixed;
+    left: 1000px;
+    z-index: 1;
+}
+
+.box-Three{
+    background: blue;
+}
+

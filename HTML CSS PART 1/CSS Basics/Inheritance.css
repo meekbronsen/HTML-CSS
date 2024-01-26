@@ -1,0 +1,12 @@
+/* child elements auto inherit properties from parent. */
+
+/* strong inherited properties from p */
+p{
+    color: Hotpink;
+    border: 1px solid black;
+}
+/* forcing the child to inherit a propety that it does not usually */
+strong{
+    border: inherit;
+}
+/* some properties are inheritable some aren't , there's a list */

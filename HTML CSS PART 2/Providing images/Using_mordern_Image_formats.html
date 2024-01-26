@@ -1,0 +1,24 @@
+<!-- webp formats should be preferred since they have small sizes -->
+
+<!-- Image format converting sites: -->
+    <!-- photoshop with a plugin called WebPShop -->
+    <!-- cloudconvert.com/jpg-to-webp -->
+    <!-- commandline tools  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- internet exlporer does not support webp format, below is a solution -->
+    <picture>
+        <source srcset="images/meal.webp" type="image/webp">
+        <source srcset="images/meal.jpg" type="image/jpeg">
+        <img src="images/meal.jpg" alt="a bowl of curry"> <!-- if neither of the above element is supported then img will be used-->
+    </picture>
+</body>
+</html>

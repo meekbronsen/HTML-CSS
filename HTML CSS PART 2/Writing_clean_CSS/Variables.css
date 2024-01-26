@@ -1,0 +1,13 @@
+/* CSS variables are used to get rid of style duplication */
+
+:root{   /* Root pseudo class element selector is the same as the html{} */
+    --color: #ffdd36;
+    --border: 2px solid black;
+}
+.box-one{
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    border-color: var(--border);
+    box-shadow: 0 0 20px 30px #f9f9f9;
+}

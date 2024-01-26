@@ -1,0 +1,23 @@
+<!-- Implementing a suggestion list in html -->
+<!-- To style a suggestion box use javascript and follow developer.mozilla.org -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <form>
+        <input type="text" list="countries" autocomplete="off"> <!--to avoid datalist clash with autocomplete is set to off -->
+        <datalist id="countries">
+            <option data-value="1">United States of America</option> <!-- the data-value will be used in the data base as a unique Identifier PK-->
+            <option>Canada</option>
+            <option>United Kingdom</option>
+            <option>Kenya</option>
+        </datalist>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* svgbackgrounds.com */
+/* use them for icons, logo simplegraphics and backgrounds */
+
+body{
+    background: url(images/constellation.svg)
+}
+
+img.UFO{
+    width: 100px
+}

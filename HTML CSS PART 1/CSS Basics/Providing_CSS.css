@@ -1,0 +1,9 @@
+/* ways to provide styles: */
+/* - embedded stylesheets , include our style in the html document*/
+/* external stylesheets , write style in seperate files */
+/* inline style , apply a style directly to element   */
+/* we use embedded styles to overwrite external styles */
+
+p{
+    color : orange;
+}
